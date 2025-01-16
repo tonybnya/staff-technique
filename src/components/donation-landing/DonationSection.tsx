@@ -1,6 +1,7 @@
 import DonationContent from "./DonationContent";
 import { Button } from "@/components/ui/button";
-import volunteer from "../../assets/images/photos/volunteer.jpg";
+import photo from "../../assets/images/photos/photo5.jpg";
+// import volunteer from "../../assets/images/photos/volunteer.jpg";
 
 const DonationSection = () => {
   return (
@@ -8,7 +9,7 @@ const DonationSection = () => {
       <div className="flex lg:flex-row max-lg:flex-col justify-center items-center gap-8 max-w-6xl w-full">
         <div className="w-full">
           <img
-            src={volunteer}
+            src={photo}
             alt="image of a volunteer"
             className="w-full h-auto rounded-lg object-cover aspect-video md:aspect-square"
           />

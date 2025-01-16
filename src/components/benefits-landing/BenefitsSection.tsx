@@ -1,11 +1,11 @@
 import BenefitCard from "./BenefitCard";
-import { 
-  Users, 
-  Heart, 
-  MessageCircle, 
-  DollarSign, 
-  HandHeart, 
-  Smile 
+import {
+  Users,
+  Heart,
+  MessageCircle,
+  DollarSign,
+  HandHeart,
+  Smile,
 } from "lucide-react";
 
 const benefitsData = [
@@ -34,7 +34,7 @@ const benefitsData = [
     number: "4",
     title: "Communication",
     description:
-      "Un groupe WhatsApp actif pour maintenir le lien et partager nos moments de vie. C'est aussi un espace d'échange d'idées et de coordination de nos activités.",
+      "Un groupe WhatsApp actif pour maintenir les liens et partager des moments de vie. C'est aussi un espace d'échange d'idées et de coordination de nos activités.",
     icon: <MessageCircle className="w-8 h-8 text-[#602f32]" />,
   },
   {

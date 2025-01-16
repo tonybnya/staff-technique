@@ -1,3 +1,5 @@
+import { Phone, Mail } from "lucide-react";
+
 const HeroContact = () => {
   return (
     <div className="flex flex-col items-start w-full text-lg font-medium leading-6 justify-start">
@@ -7,18 +9,24 @@ const HeroContact = () => {
         Contactez-nous !
       </div>
       <div className="mt-4 text-4xl leading-none text-black flex flex-col tracking-tight text-justify max-lg:mx-auto">
-        <span className="text-sm">
-          <i className="text-[#603f32] fa-solid fa-phone"></i> +237 679 10 08 48
-        </span>
-        <span className="text-sm">
-          <i className="text-[#603f32] fa-solid fa-phone"></i> +216 29 258 563
-        </span>
-        <span className="text-sm">
-          <i className="text-[#603f32] fa-solid fa-phone"></i> +33 7 52 74 18 01
-        </span>
-        <span className="text-sm">
-          <i className="text-[#603f32] fa-solid fa-envelope"></i> lestafftechnique@gmail.com
-        </span>
+        <div className="flex items-center gap-2">
+          <Phone className="text-[#603f32]" />
+          <span className="text-sm tracking-normal">+237 679 10 08 48</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Phone className="text-[#603f32]" />
+          <span className="text-sm tracking-normal">+216 29 258 563</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Phone className="text-[#603f32]" />
+          <span className="text-sm tracking-normal">+33 7 52 74 18 01</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Mail className="text-[#603f32]" />
+          <span className="text-sm tracking-normal">
+            lestafftechnique@gmail.com
+          </span>
+        </div>
       </div>
     </div>
   );

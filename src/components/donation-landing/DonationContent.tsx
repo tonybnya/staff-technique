@@ -10,28 +10,25 @@ const DonationContent = () => {
         </div>
         <div className="self-stretch mt-8 text-lg leading-6 max-md:max-w-full text-justify font-light">
           Nous sommes une communauté dynamique et solidaire, unie par des liens
-          d&apos;amitié, des valeurs de partage et de soutien.
-          Ensemble, nous réalisons des activités sociales et des œuvres
-          caritatives qui impactent positivement la vie de nombreuses personnes.
-          Qu&apos;il s&apos;agisse d&apos;aider des orphelins, de soutenir des
-          veuves, ou de promouvoir la cohésion sociale, chaque geste compte pour
-          bâtir un avenir meilleur.
+          d&apos;amitié et des valeurs de partage. Ensemble, nous réalisons des
+          œuvres caritatives qui impactent positivement la vie de nombreuses
+          personnes. Qu&apos;il s&apos;agisse d&apos;aider des orphelins, de
+          soutenir des veuves, ou de promouvoir la cohésion sociale, chaque
+          geste compte.
           <br />
           <br />
-          {/* Votre contribution peut faire une réelle différence. En soutenant le
-          STAFF TECHNIQUE, vous nous aidez à étendre la portée de nos actions et
-          à répondre efficacement aux besoins des communautés les plus
+          Vous pouvez nous aider à étendre la portée de nos actions et à
+          répondre efficacement aux besoins des communautés les plus
           vulnérables. Que vous soyez une organisation, une entreprise, un
           bienfaiteur, ou simplement une âme généreuse, nous accueillons avec
-          gratitude chaque don et chaque geste d&apos;entraide.
+          gratitude chaque geste de solidarité.
           <br />
-          <br /> */}
+          <br />
           Si vous souhaitez contribuer à nos projets, vous êtes au bon endroit.
           Grâce à votre générosité, nous pourrons poursuivre nos engagements en
-          faveur du développement et de l’entraide. Ensemble, faisons rayonner
-          nos valeurs et transformons des vies.{" "}
+          faveur du développement et de l’entraide.{" "}
           <strong>
-            Rejoignez-nous dans cette noble mission dès aujourd’hui !
+            Ensemble, faisons rayonner nos valeurs et transformons des vies.
           </strong>
         </div>
       </div>

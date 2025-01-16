@@ -6,7 +6,7 @@ const AboutSection = () => {
   const aboutData = {
     title: "QUI SOMMES NOUS ?",
     heading: "À propos de nous",
-    content: `Le STAFF TECHNIQUE a toujours promu et valorisé l’entraide, la fraternité et la solidarité entre ses différents membres, les Staffiers et ce, depuis sa création en 2002. L’idéologie qui habite chaque Staffier, en tout temps et en tout lieu, se résume dans trois expressions qui fondent l’esprit des origines du STAFF TECHNIQUE : amitié – fraternité – solidarité.`,
+    content: `Le STAFF TECHNIQUE a toujours promu et valorisé l’entraide, la fraternité et la solidarité entre ses différents membres, les Staffiers et ce, depuis sa création en 2002. L’idéologie qui habite chaque Staffier, en tout temps et en tout lieu, se résume dans trois expressions qui fondent l’esprit des origines du STAFF TECHNIQUE : amitié – fraternité – solidarité. Au fil des années, le STAFF TECHNIQUE a su rester fidèle à ses valeurs fondamentales. En s’appuyant sur une organisation structurée et des initiatives concrètes, le STAFF s’engage à soutenir les Staffiers dans les moments difficiles, à célébrer leurs réussites et à contribuer activement au développement de la Communauté. Chaque activité entreprise reflète notre désir collectif de construire un avenir meilleur, basé sur l’entraide et la solidarité.`,
   };
 
   return (

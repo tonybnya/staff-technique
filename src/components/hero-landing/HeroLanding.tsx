@@ -2,12 +2,12 @@ import HeroContact from "./HeroContact";
 import HeroCTA from "./HeroCTA";
 import photo1 from "../../assets/images/photos/photo1.jpg";
 import photo17 from "../../assets/images/photos/photo17.jpg";
-import photo3 from "../../assets/images/photos/photo3.jpg";
+import photo23 from "../../assets/images/photos/photo23.jpeg";
 import photo16 from "../../assets/images/photos/photo16.jpg";
-import photo5 from "../../assets/images/photos/photo5.jpg";
+import photo25 from "../../assets/images/photos/photo25.jpg";
 import photo6 from "../../assets/images/photos/photo6.jpg";
 import photo7 from "../../assets/images/photos/photo7.jpg";
-import photo8 from "../../assets/images/photos/photo8.jpg";
+import photo24 from "../../assets/images/photos/photo24.jpeg";
 import photo21 from "../../assets/images/photos/photo21.jpg";
 import photo18 from "../../assets/images/photos/photo18.jpg";
 import photo11 from "../../assets/images/photos/photo11.jpg";
@@ -18,7 +18,7 @@ import HeroSloganSlider from "./HeroSloganSlider";
 // Combine all images into a single array for the mosaic
 const mosaicImages = [
   {
-    src: photo1,
+    src: photo25,
     alt: "photo staffier",
     className: "aspect-square w-full rounded-2xl object-cover",
   },
@@ -28,7 +28,7 @@ const mosaicImages = [
     className: "aspect-square w-full rounded-2xl object-cover",
   },
   {
-    src: photo3,
+    src: photo23,
     alt: "photo staffier",
     className: "aspect-square w-full rounded-2xl object-cover",
   },
@@ -38,7 +38,7 @@ const mosaicImages = [
     className: "aspect-square w-full rounded-2xl object-cover",
   },
   {
-    src: photo5,
+    src: photo1,
     alt: "photo staffier",
     className: "aspect-square w-full rounded-2xl object-cover",
   },
@@ -53,7 +53,7 @@ const mosaicImages = [
     className: "aspect-square w-full rounded-2xl object-cover",
   },
   {
-    src: photo8,
+    src: photo24,
     alt: "photo staffier",
     className: "aspect-square w-full rounded-2xl object-cover",
   },
@@ -85,8 +85,14 @@ const HeroLanding = () => {
       {/* Main flex container */}
       <div className="flex flex-col-reverse md:flex-row gap-8">
         <div className="flex gap-2">
-          <HeroPhotoMosaic images={mosaicImages.slice(0, 6)} className="h-full" />
-          <HeroPhotoMosaic images={mosaicImages.slice(6, 12)} className="h-full" />
+          <HeroPhotoMosaic
+            images={mosaicImages.slice(0, 6)}
+            className="h-full"
+          />
+          <HeroPhotoMosaic
+            images={mosaicImages.slice(6, 12)}
+            className="h-full"
+          />
         </div>
 
         {/* Right side: Content */}
