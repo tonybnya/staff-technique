@@ -1,31 +1,28 @@
 import DonationContent from "./DonationContent";
-// import DonationImage from "./DonationImage";
+import { Button } from "@/components/ui/button";
 import volunteer from "../../assets/images/photos/volunteer.jpg";
 
 const DonationSection = () => {
   return (
-    <div className="flex overflow-hidden flex-col items-center px-6 md:px-20 pt-8 md:pt-16 pb-16 md:pb-28 bg-zinc-100">
-      <div className="flex flex-col w-full max-w-[1407px]">
+    <div className="flex overflow-hidden flex-col items-center px-6 md:px-20 py-16 md:py-28 bg-zinc-100">
+      <div className="flex lg:flex-row max-lg:flex-col justify-center items-center gap-8 max-w-6xl w-full">
         <div className="w-full">
-          <div className="flex flex-col md:flex-row gap-8 md:gap-5">
-            <DonationContent />
-            <div className="w-full md:w-1/2 h-[300px] md:h-auto">
-              <img
-                src={volunteer}
-                alt="People enjoying hookah"
-                className="w-full h-full rounded-lg object-cover"
-              />
-            </div>
-          </div>
+          <img
+            src={volunteer}
+            alt="image of a volunteer"
+            className="w-full h-auto rounded-lg object-cover aspect-video md:aspect-square"
+          />
         </div>
-        <div className="flex justify-center md:justify-start">
-          <a
-            href="/advocacy"
-            className="group relative flex items-center text-center tracking-wider gap-3 px-6 md:px-8 py-3 text-base font-medium rounded-[200px] text-white bg-black drop-shadow-md mt-8 md:mt-4 hover:scale-105 transition-transform"
+        <div className="w-full">
+          <DonationContent />
+          <Button
+            asChild
+            className="bg-black hover:bg-black/70 text-white text-xl w-full mt-6 p-6 max-lg:text-lg max-lg:p-4 shadow-2xl"
           >
-            En savoir plus
-            <div className="absolute inset-0 h-full w-full scale-0 rounded-[200px] transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
-          </a>
+            <a href="/advocacy" target="_blank">
+              En savoir plus
+            </a>
+          </Button>
         </div>
       </div>
     </div>
