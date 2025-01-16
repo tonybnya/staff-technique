@@ -5,7 +5,14 @@ import {
   CardContent 
 } from "@/components/ui/card";
 
-const BenefitCard = ({ number, title, description, icon }) => {
+interface BenefitCardProps {
+  number: string;
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+}
+
+const BenefitCard = ({ number, title, description, icon }: BenefitCardProps) => {
   return (
     <Card className="flex flex-col w-full max-w-md h-[300px] m-4 p-6 rounded-xl border shadow-2xl hover:shadow-lg">
       <div className="flex justify-between items-start mb-4">

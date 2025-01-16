@@ -1,4 +1,10 @@
-const HeroImageCard = ({ src, className, alt }) => {
+interface HeroImageCardProps {
+  src: string;
+  className?: string;
+  alt: string;
+}
+
+const HeroImageCard = ({ src, className, alt }: HeroImageCardProps) => {
   return (
     <img
       loading="lazy"

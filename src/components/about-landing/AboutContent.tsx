@@ -1,4 +1,12 @@
-const AboutContent = ({ data }) => {
+interface AboutContentProps {
+  data: {
+    title: string;
+    heading: string;
+    content: string;
+  };
+}
+
+const AboutContent = ({ data }: AboutContentProps) => {
   return (
     <div className="flex flex-col w-full max-md:ml-0 max-md:w-full">
       <div className="flex flex-col grow items-start mt-1.5 font-medium text-black max-md:mt-10 max-md:max-w-full">

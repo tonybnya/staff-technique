@@ -1,6 +1,16 @@
 import HeroImageCard from "./HeroImageCard";
 
-const HeroPhotoMosaic = ({ images }) => {
+interface ImageProps {
+  src: string;
+  alt: string;
+  className?: string;
+}
+
+interface HeroPhotoMosaicProps {
+  images: ImageProps[];
+}
+
+const HeroPhotoMosaic = ({ images }: HeroPhotoMosaicProps) => {
   return (
     <div className="md:w-1/2 aspect-square">
       <div
