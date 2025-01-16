@@ -79,7 +79,7 @@ const HeroLanding = () => {
           </h1>
 
           {/* Text content */}
-          <div className="text-lg font-medium leading-6 text-black mb-2 text-justify tracking-tight">
+          <div className="text-lg font-medium text-black mb-2 text-justify tracking-tight">
             Nous sommes un groupe d&apos;amis d&apos;enfance appelés « Staffiers
             », et réunis sous l&apos;appellation « STAFF TECHNIQUE » ou « STAFF
             » dans sa forme simplifiée. Cet espace vise à nous faire connaître

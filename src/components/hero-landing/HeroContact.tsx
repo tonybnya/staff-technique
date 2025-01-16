@@ -1,7 +1,7 @@
 const HeroContact = () => {
   return (
     <div className="flex flex-col items-start w-full text-lg font-medium leading-6 justify-start">
-      <div className="mt-6 text-2xl max-lg:text-xl leading-none text-justify max-lg:mx-auto max-lg:text-center text-black max-md:mt-10 tracking-wide">
+      <div className="mt-6 text-2xl max-lg:text-xl text-justify max-lg:mx-auto max-lg:text-center text-black max-md:mt-10 tracking-wide">
         Vous avez des questions ?
         <br />
         Contactez-nous !
