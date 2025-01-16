@@ -18,8 +18,8 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-black flex justify-center">
-      <div className="container flex h-16 items-center px-4">
+    <nav className="sticky top-0 z-50 w-full border-b bg-black">
+      <div className="container flex h-16 items-center px-4 mx-auto">
         {/* Logo */}
         <a href="/" className="mr-6">
           <img
@@ -30,7 +30,7 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6 flex-1">
+        <div className="hidden md:flex items-center gap-6 flex-1 justify-center">
           {navItems.map((item, index) => (
             <a
               key={index}
@@ -40,10 +40,10 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
-        </nav>
+        </div>
 
         {/* Desktop Membership Button */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center">
           <Button
             asChild
             className="bg-[#602f32] text-white hover:bg-[#8f7d5e] shadow-2xl"
@@ -85,7 +85,7 @@ const Navbar = () => {
           </SheetContent>
         </Sheet>
       </div>
-    </header>
+    </nav>
   );
 };
 
