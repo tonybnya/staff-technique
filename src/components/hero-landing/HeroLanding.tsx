@@ -10,7 +10,7 @@ import photo7 from "../../assets/images/photos/photo7.jpg";
 import photo24 from "../../assets/images/photos/photo24.jpeg";
 import photo21 from "../../assets/images/photos/photo21.jpg";
 import photo18 from "../../assets/images/photos/photo18.jpg";
-import photo11 from "../../assets/images/photos/photo11.jpg";
+import photo20 from "../../assets/images/photos/photo20.jpg";
 import photo14 from "../../assets/images/photos/photo14.jpg";
 import HeroPhotoMosaic from "./HeroPhotoMosaic";
 import HeroSloganSlider from "./HeroSloganSlider";
@@ -68,7 +68,7 @@ const mosaicImages = [
     className: "aspect-square w-full rounded-2xl object-cover",
   },
   {
-    src: photo11,
+    src: photo20,
     alt: "photo staffier",
     className: "aspect-square w-full rounded-2xl object-cover",
   },
