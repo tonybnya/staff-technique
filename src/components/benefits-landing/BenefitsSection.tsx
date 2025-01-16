@@ -63,7 +63,7 @@ const BenefitsSection = () => {
               Devenez l&apos;un des nôtres !
             </div>
             <div className="text-5xl font-semibold text-muted-foreground max-md:max-w-full max-md:text-4xl">
-              Avantages pour les membres
+              Avantages pour les Staffiers
             </div>
           </div>
           <div className="self-start mt-9 text-lg font-medium tracking-tight max-md:max-w-full text-black">
