@@ -5,7 +5,7 @@ const sloganArray = ["AMITIÉ", "FRATERNITÉ", "SOLIDARITÉ"];
 
 const HeroSloganSlider = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-4 text-black dark:text-white">
+    <div className="flex flex-col justify-center items-center gap-4 text-white">
       <Marquee>
         {sloganArray.map((slogan, index) => (
           <HeroSloganItem key={index} text={slogan} />

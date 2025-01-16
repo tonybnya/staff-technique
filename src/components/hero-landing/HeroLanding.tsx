@@ -74,12 +74,12 @@ const HeroLanding = () => {
         {/* Right side: Content */}
         <div className="md:w-1/2">
           {/* Title section */}
-          <h1 className="uppercase text-5xl font-bold max-md:text-4xl mb-6 tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#602f32] via-[#8f7d5e] to-black">
+          <h1 className="uppercase text-5xl font-bold max-lg:text-2xl max-lg:text-center mb-6 tracking-tight text-justify text-black">
             le staff technique
           </h1>
 
           {/* Text content */}
-          <div className="text-lg font-medium leading-6 text-black mb-2 text-justify tracking-wide">
+          <div className="text-lg font-medium leading-6 text-black mb-2 text-justify tracking-tight">
             Nous sommes un groupe d&apos;amis d&apos;enfance appelés « Staffiers
             », et réunis sous l&apos;appellation « STAFF TECHNIQUE » ou « STAFF
             » dans sa forme simplifiée. Cet espace vise à nous faire connaître

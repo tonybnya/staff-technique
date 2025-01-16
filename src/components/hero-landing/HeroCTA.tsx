@@ -1,20 +1,34 @@
+import { Button } from "@/components/ui/button";
+
 const HeroCTA = () => {
   return (
-    <div className="flex gap-2 justify-start my-4 max-w-full font-bold leading-10">
-      <a
+    <div className="flex gap-2 justify-start max-lg:justify-center my-4 max-w-full font-bold leading-10">
+      <Button
+        asChild
+        className="group bg-[#602f32] text-white text-xl p-6 max-lg:text-lg max-lg:p-4 shadow-2xl"
+      >
+        <a href="/membership">Nous rejoindre</a>
+      </Button>
+      <Button
+        asChild
+        className="group bg-[#8f7d5e] text-white text-xl p-6 max-lg:text-lg max-lg:p-4 shadow-2xl"
+      >
+        <a href="/donate">Faire un don</a>
+      </Button>
+      {/* <a
         href="/membership"
-        className="group flex items-center text-center tracking-wider gap-3 px-8 py-3 w-max text-base max-lg:text-sm font-medium rounded-[200px] text-white bg-[#8f7d5e] drop-shadow-md"
+        className="group flex items-center text-center tracking-wider gap-3 px-8 py-3 w-max text-base max-lg:text-sm font-medium rounded-md text-white bg-[#8f7d5e] drop-shadow-md"
       >
         Nous rejoindre
         <div className="absolute inset-0 h-full w-full scale-0 rounded-md transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
       </a>
       <a
         href="/donate"
-        className="group flex items-center text-center tracking-wider gap-3 px-8 py-3 w-max text-base max-lg:text-sm font-medium rounded-[200px] text-white bg-[#602f32] drop-shadow-md"
+        className="group flex items-center text-center tracking-wider gap-3 px-8 py-3 w-max text-base max-lg:text-sm font-medium rounded-md text-white bg-[#602f32] drop-shadow-md"
       >
         Faire un don
         <div className="absolute inset-0 h-full w-full scale-0 rounded-md transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
-      </a>
+      </a> */}
     </div>
   );
 };

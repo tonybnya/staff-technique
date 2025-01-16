@@ -5,7 +5,7 @@ import HeroLanding from "../components/hero-landing/HeroLanding";
 
 const Landing = () => {
   return (
-    <div className="flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-background via-secondary/10 to-background">
       <HeroLanding />
       <AboutSection />
       <DonationSection />
