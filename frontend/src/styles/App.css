@@ -1,0 +1,19 @@
+#root {
+  /*max-width: 1280px;*/
+  margin: 0 auto;
+  /*padding: 2rem;*/
+  text-align: center;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(236, 109, 81, 0.3);
+}
+
+.my-shadow {
+  text-shadow: 5px 5px 10px black;
+}
