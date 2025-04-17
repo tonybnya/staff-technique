@@ -115,21 +115,16 @@ const HeroLanding = () => {
           </div>
         </div>
 
-        <div>
-          <div className="flex flex-col md:w-1/2">
-            <HeroPhotoMosaic
-              images={mosaicImages.slice(0, 4)}
-              direction="left"
-            />
-            <HeroPhotoMosaic
-              images={mosaicImages.slice(4, 8)}
-              direction="right"
-            />
-            <HeroPhotoMosaic
-              images={mosaicImages.slice(8, 12)}
-              direction="left"
-            />
-          </div>
+        <div className="flex flex-col md:w-1/2 md:pr-12 xl:pr-12">
+          <HeroPhotoMosaic images={mosaicImages.slice(0, 4)} direction="left" />
+          <HeroPhotoMosaic
+            images={mosaicImages.slice(4, 8)}
+            direction="right"
+          />
+          <HeroPhotoMosaic
+            images={mosaicImages.slice(8, 12)}
+            direction="left"
+          />
         </div>
       </div>
     </div>
