@@ -81,9 +81,8 @@ const mosaicImages = [
 
 const HeroLanding = () => {
   return (
-    // <div className="overflow-hidden p-14 bg-[#09090b] min-h-screen">
     <div
-      className="relative overflow-hidden p-14 bg-[#1a1826] min-h-screen"
+      className="relative overflow-hidden p-12 bg-[#1a1826] min-h-screen"
       style={{
         backgroundImage: "url('/hero-bg.jpg')",
         backgroundSize: "cover",
@@ -91,13 +90,13 @@ const HeroLanding = () => {
       }}
     >
       {/* Main flex container */}
-      <div className="absolute inset-0 bg-black opacity-75"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-[#602f32] to-black opacity-80"></div>
 
-      <div className="relative z-10 flex flex-col-reverse md:flex-row gap-8">
+      <div className="relative z-10 flex flex-col-reverse md:flex-row gap-10">
         {/* Left side: Content */}
         <div className="md:w-1/2">
           {/* Title section */}
-          <h1 className="uppercase text-5xl font-bold max-lg:text-3xl max-lg:text-center mb-6 tracking-tight text-center text-white rounded-xl p-6 bg-gradient-to-br from-[#09090b] via-[#602f32] to-[#09090b] border border-[#9e4b4f]/30 backdrop-blur-sm my-shadow shadow-[#602f32]/50 hover:shadow-[0_0_0_2px_#ffffff20] transition duration-300 ease-in-out">
+          <h1 className="uppercase text-5xl font-bold max-lg:text-2xl max-lg:text-center mb-6 tracking-tight text-center text-white rounded-xl p-6 bg-gradient-to-br from-[#09090b] via-[#602f32] to-[#09090b] border border-[#9e4b4f]/30 backdrop-blur-sm my-shadow shadow-[#602f32]/50 hover:shadow-[0_0_0_2px_#ffffff20] transition duration-300 ease-in-out">
             le staff technique
           </h1>
           {/* Text content */}
@@ -109,21 +108,28 @@ const HeroLanding = () => {
             caritatives.
           </div>
           <HeroSloganSlider />
-          <HeroCTA />
-          <div className="mt-4 w-full h-px border border-solid border-neutral-400 border-opacity-60 max-md:mt-10" />
-          <HeroContact />
+          <div className="mt-4 w-full h-px border border-neutral-400 border-opacity-60 max-md:mt-10" />
+          <div className="flex flex-col">
+            <HeroCTA />
+            <HeroContact />
+          </div>
         </div>
 
-        <div className="flex flex-col gap-4 md:w-1/2">
-          <HeroPhotoMosaic images={mosaicImages.slice(0, 4)} direction="left" />
-          <HeroPhotoMosaic
-            images={mosaicImages.slice(4, 8)}
-            direction="right"
-          />
-          <HeroPhotoMosaic
-            images={mosaicImages.slice(8, 12)}
-            direction="left"
-          />
+        <div>
+          <div className="flex flex-col md:w-1/2">
+            <HeroPhotoMosaic
+              images={mosaicImages.slice(0, 4)}
+              direction="left"
+            />
+            <HeroPhotoMosaic
+              images={mosaicImages.slice(4, 8)}
+              direction="right"
+            />
+            <HeroPhotoMosaic
+              images={mosaicImages.slice(8, 12)}
+              direction="left"
+            />
+          </div>
         </div>
       </div>
     </div>

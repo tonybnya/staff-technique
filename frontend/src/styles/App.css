@@ -14,6 +14,18 @@
   box-shadow: 0 0 20px rgba(236, 109, 81, 0.3);
 }
 
+.my-shadow-text {
+  text-shadow: 1px 1px 50px black;
+}
+
 .my-shadow {
   text-shadow: 5px 5px 10px black;
+}
+
+.my-shadow-one {
+  text-shadow: 1px 1px 5px black;
+}
+
+.my-shadow-two {
+  text-shadow: 1px 1px 5px #8f7d5e;
 }

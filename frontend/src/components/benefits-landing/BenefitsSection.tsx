@@ -59,10 +59,10 @@ const BenefitsSection = () => {
       <div className="flex flex-col w-full max-w-[1614px] max-md:max-w-full items-center">
         <div className="flex flex-col self-center max-w-full text-center text-white w-[922px]">
           <div className="flex flex-col items-center w-full">
-            <div className="text-base font-semibold text-[#8f7d5e] uppercase max-md:max-w-full">
+            <div className="text-base font-semibold my-shadow-two text-[#8f7d5e] uppercase max-md:max-w-full">
               Devenez l&apos;un des nôtres !
             </div>
-            <div className="text-5xl font-semibold text-muted-foreground max-md:max-w-full max-md:text-4xl">
+            <div className="text-5xl font-semibold my-shadow-one text-muted-foreground max-md:max-w-full max-md:text-4xl">
               Avantages pour les Staffiers
             </div>
           </div>

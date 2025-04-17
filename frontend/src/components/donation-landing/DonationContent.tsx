@@ -2,13 +2,13 @@ const DonationContent = () => {
   return (
     <div className="flex flex-col w-full max-md:ml-0 max-md:w-full">
       <div className="flex flex-col items-start mt-2.5 font-medium text-black max-md:mt-10 max-md:max-w-full">
-        <div className="text-base leading-none font-semibold max-lg:mx-auto text-[#8f7d5e] uppercase">
+        <div className="text-base leading-none font-semibold my-shadow-two max-lg:mx-auto text-[#8f7d5e] uppercase">
           Comment les dons peuvent aider
         </div>
-        <div className="mt-5 text-5xl leading-6 font-semibold max-lg:text-4xl max-lg:mx-auto text-muted-foreground">
+        <div className="mt-5 text-5xl leading-6 font-semibold my-shadow-one max-lg:text-4xl max-lg:mx-auto text-muted-foreground">
           Faites un don
         </div>
-        <div className="self-stretch mt-8 text-lg leading-6 max-md:max-w-full text-justify font-light">
+        <div className="self-stretch my-shadow-text mt-8 text-lg leading-6 max-md:max-w-full text-justify font-light">
           Nous sommes une communauté dynamique et solidaire, unie par des liens
           d&apos;amitié et des valeurs de partage. Ensemble, nous réalisons des
           œuvres caritatives qui impactent positivement la vie de nombreuses

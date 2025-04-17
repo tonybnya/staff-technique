@@ -1,11 +1,11 @@
 import DonationContent from "./DonationContent";
 import { Button } from "@/components/ui/button";
 import photo from "../../assets/images/photos/photo5.jpg";
-// import volunteer from "../../assets/images/photos/volunteer.jpg";
+//       <section className="relative py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
 
 const DonationSection = () => {
   return (
-    <div className="flex overflow-hidden flex-col items-center px-6 md:px-20 py-16 md:py-28 bg-zinc-100">
+    <section className="flex overflow-hidden flex-col items-center max-lg:px-10 lg:px-4 py-16 md:py-20 bg-zinc-100">
       <div className="flex lg:flex-row max-lg:flex-col justify-center items-center gap-8 max-w-6xl w-full">
         <div className="w-full">
           <img
@@ -26,7 +26,7 @@ const DonationSection = () => {
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

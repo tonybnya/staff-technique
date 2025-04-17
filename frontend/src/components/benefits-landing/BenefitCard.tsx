@@ -32,7 +32,7 @@ const BenefitCard = ({
         </div>
       </div>
       <CardContent className="p-0 flex-grow flex items-end">
-        <CardDescription className="text-lg font-light leading-6 text-justify text-black tracking-wide max-md:text-base">
+        <CardDescription className="text-lg font-light leading-6 my-shadow-text text-justify text-black tracking-wide max-md:text-base">
           {description}
         </CardDescription>
       </CardContent>
