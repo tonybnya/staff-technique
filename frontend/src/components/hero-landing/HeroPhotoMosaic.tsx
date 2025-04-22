@@ -20,7 +20,7 @@ const HeroPhotoMosaic = ({
 }: HeroPhotoMosaicProps) => {
   return (
     <Marquee
-      speed={40}
+      speed={70}
       gradient={false}
       direction={direction}
       className={`mb-2 ${className}`}
