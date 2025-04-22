@@ -205,7 +205,7 @@ const Navbar = () => {
                 <img
                   src={logo}
                   alt="logo du staff technique"
-                  className="h-10 w-10"
+                  className="h-10 w-10 animate-pulse filter brightness-100 hover:scale-150 drop-shadow-[0_0_5px_white]"
                 />
               </Link>
 

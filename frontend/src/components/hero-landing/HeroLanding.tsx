@@ -44,7 +44,7 @@ const HeroLanding = () => {
       }}
     >
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] to-[#09090b] opacity-85"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] to-[#09090b] opacity-90"></div>
 
       {/* Content Wrapper */}
       <div className="relative z-10 px-6 py-16 max-w-7xl mx-auto flex flex-col gap-12">

@@ -26,7 +26,7 @@ const Footer = () => {
           <a href="/" className="flex justify-center">
             <img
               src={logo}
-              className="h-32 object-contain animate-pulse"
+              className="h-32 object-contain animate-pulse filter brightness-100 hover:scale-150 drop-shadow-[0_0_5px_white]"
               alt="logo du staff"
             />
           </a>
