@@ -27,9 +27,7 @@ const transitionVariants = {
 const Landing = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-secondary/10 to-background">
-      <AnimatedGroup variants={transitionVariants}>
-        <HeroLanding />
-      </AnimatedGroup>
+      <HeroLanding />
 
       <AnimatedGroup variants={transitionVariants}>
         <AboutSection />

@@ -18,6 +18,28 @@ import photo18 from "../../assets/images/photos/photo18.jpg";
 import photo20 from "../../assets/images/photos/photo20.jpg";
 import photo14 from "../../assets/images/photos/photo14.jpg";
 
+import { AnimatedGroup } from "../../../components/motion-primitives/animated-group";
+
+const transitionVariants = {
+  item: {
+    hidden: {
+      opacity: 0,
+      filter: "blur(12px)",
+      y: 12,
+    },
+    visible: {
+      opacity: 1,
+      filter: "blur(0px)",
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.3,
+        duration: 1.5,
+      },
+    },
+  },
+};
+
 // Combine all images into a single array
 const mosaicImages = [
   { src: photo25, alt: "photo staffier" },
@@ -58,21 +80,25 @@ const HeroLanding = () => {
       <div className="relative z-10 px-6 py-16 max-w-7xl mx-auto flex flex-col gap-12">
         {/* Header Section */}
         <div className="flex flex-col items-center text-center max-w-3xl w-full mx-auto space-y-4 px-4 pt-12">
-          <div className="px-8 py-5 hollow-effect">
-            <h1 className="uppercase text-3xl md:text-4xl max-sm:text-xl font-bold tracking-wide text-white animate-pulse">
-              le staff technique
-            </h1>
-          </div>
+          <AnimatedGroup variants={transitionVariants}>
+            <div className="px-8 py-5 hollow-effect">
+              <h1 className="uppercase text-3xl md:text-4xl max-sm:text-xl font-bold tracking-wide text-white animate-pulse">
+                le staff technique
+              </h1>
+            </div>
+          </AnimatedGroup>
 
-          <p className="text-lg md:text-xl text-white/90 leading-relaxed tracking-tight">
-            Nous sommes un groupe d&apos;amis d&apos;enfance appelés{" "}
-            <span className="text-[#8f7d5e]">« Staffiers »</span>, et réunis
-            sous l&apos;appellation{" "}
-            <span className="text-[#8f7d5e]">« STAFF TECHNIQUE »</span> ou{" "}
-            <span className="text-[#8f7d5e]">« STAFF »</span> dans sa forme
-            simplifiée. Cet espace vise à nous faire connaître du grand public
-            afin de dynamiser nos actions et nos oeuvres caritatives.
-          </p>
+          <AnimatedGroup variants={transitionVariants}>
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed tracking-tight">
+              Nous sommes un groupe d&apos;amis d&apos;enfance appelés{" "}
+              <span className="text-[#8f7d5e]">« Staffiers »</span>, et réunis
+              sous l&apos;appellation{" "}
+              <span className="text-[#8f7d5e]">« STAFF TECHNIQUE »</span> ou{" "}
+              <span className="text-[#8f7d5e]">« STAFF »</span> dans sa forme
+              simplifiée. Cet espace vise à nous faire connaître du grand public
+              afin de dynamiser nos actions et nos oeuvres caritatives.
+            </p>
+          </AnimatedGroup>
 
           <div className="max-w-[75%]">
             <HeroSloganSlider />
@@ -80,27 +106,29 @@ const HeroLanding = () => {
         </div>
 
         {/* CTA + Contact + Mosaic Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* Left column */}
-          <div className="flex flex-col gap-6">
-            <HeroCTA />
-            <HeroContact />
-          </div>
+        <AnimatedGroup variants={transitionVariants}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Left column */}
+            <div className="flex flex-col gap-6">
+              <HeroCTA />
+              <HeroContact />
+            </div>
 
-          {/* Right column */}
-          <div className="pt-2">
-            <HeroPhotoMosaic images={mosaicImages} direction="right" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {stats.map((stat, index) => (
-                <HeroStatCard
-                  key={index}
-                  label={stat.label}
-                  value={stat.value}
-                />
-              ))}
+            {/* Right column */}
+            <div className="pt-2">
+              <HeroPhotoMosaic images={mosaicImages} direction="right" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {stats.map((stat, index) => (
+                  <HeroStatCard
+                    key={index}
+                    label={stat.label}
+                    value={stat.value}
+                  />
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        </AnimatedGroup>
       </div>
     </div>
   );
