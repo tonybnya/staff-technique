@@ -6,6 +6,7 @@ export default {
     fontFamily: {
       sans: [
         "Liter",
+        "Inter",
         "ui-sans-serif",
         "system-ui",
         "-apple-system",
