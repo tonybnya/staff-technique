@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#09090b] border-t-2 border-gray-200">
+    <footer className="bg-[#09090b] border-t-2 border-gray-700">
       <div className="mx-auto w-full max-w-screen-xl px-4 py-8">
         <div className="flex flex-col items-center gap-8">
           {/* Logo */}
