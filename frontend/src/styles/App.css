@@ -1,7 +1,5 @@
 #root {
-  /*max-width: 1280px;*/
   margin: 0 auto;
-  /*padding: 2rem;*/
   text-align: center;
 }
 
@@ -35,5 +33,5 @@
   box-shadow:
     inset 4px 4px 8px rgba(0, 0, 0, 0.9),
     inset -4px -4px 8px rgba(255, 255, 255, 0.05);
-  border-radius: 999px;
+  border-radius: 20px;
 }

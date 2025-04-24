@@ -82,7 +82,7 @@ const HeroLanding = () => {
         <div className="flex flex-col items-center text-center max-w-3xl w-full mx-auto space-y-4 px-4 pt-12">
           <AnimatedGroup variants={transitionVariants}>
             <div className="px-8 py-5 hollow-effect">
-              <h1 className="uppercase text-3xl md:text-4xl max-sm:text-xl font-bold tracking-wide text-white animate-pulse">
+              <h1 className="uppercase text-3xl md:text-4xl max-sm:text-xl font-thin tracking-wide text-white animate-pulse">
                 le staff technique
               </h1>
             </div>
