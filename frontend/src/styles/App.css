@@ -29,3 +29,11 @@
 .my-shadow-two {
   text-shadow: 1px 1px 5px #8f7d5e;
 }
+
+.hollow-effect {
+  background-image: linear-gradient(180deg, #09090b, #602f32, #09090b);
+  box-shadow:
+    inset 4px 4px 8px rgba(0, 0, 0, 0.9),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+}

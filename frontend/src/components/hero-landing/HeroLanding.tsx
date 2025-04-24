@@ -1,6 +1,7 @@
 import HeroContact from "./HeroContact";
 import HeroCTA from "./HeroCTA";
 import HeroPhotoMosaic from "./HeroPhotoMosaic";
+import HeroStatCard from "./HeroStatCard";
 import HeroSloganSlider from "./HeroSloganSlider";
 
 // Import images
@@ -33,6 +34,13 @@ const mosaicImages = [
   { src: photo14, alt: "photo staffier" },
 ];
 
+const stats = [
+  { label: "Année de création", value: "2002" },
+  { label: "Staffiers actifs", value: "50+" },
+  { label: "Actions de solidarité", value: "100+" },
+  { label: "Familles soutenues", value: "70+" },
+];
+
 const HeroLanding = () => {
   return (
     <div
@@ -50,9 +58,12 @@ const HeroLanding = () => {
       <div className="relative z-10 px-6 py-16 max-w-7xl mx-auto flex flex-col gap-12">
         {/* Header Section */}
         <div className="flex flex-col items-center text-center max-w-3xl w-full mx-auto space-y-4 px-4 pt-12">
-          <h1 className="uppercase text-3xl md:text-4xl max-sm:text-xl font-bold tracking-tight bg-gradient-to-br from-[#09090b] via-[#602f32] to-[#09090b] inline-block px-4 py-2 rounded-xl border border-[#9e4b4f]/30 shadow-md backdrop-blur-sm my-shadow">
-            le staff technique
-          </h1>
+          <div className="px-8 py-5 hollow-effect">
+            <h1 className="uppercase text-3xl md:text-4xl max-sm:text-xl font-bold tracking-wide text-white animate-pulse">
+              le staff technique
+            </h1>
+          </div>
+
           <p className="text-lg md:text-xl text-white/90 leading-relaxed tracking-tight">
             Nous sommes un groupe d&apos;amis d&apos;enfance appelés{" "}
             <span className="text-[#8f7d5e]">« Staffiers »</span>, et réunis
@@ -62,6 +73,7 @@ const HeroLanding = () => {
             simplifiée. Cet espace vise à nous faire connaître du grand public
             afin de dynamiser nos actions et nos oeuvres caritatives.
           </p>
+
           <div className="max-w-[75%]">
             <HeroSloganSlider />
           </div>
@@ -78,6 +90,15 @@ const HeroLanding = () => {
           {/* Right column */}
           <div className="pt-2">
             <HeroPhotoMosaic images={mosaicImages} direction="right" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {stats.map((stat, index) => (
+                <HeroStatCard
+                  key={index}
+                  label={stat.label}
+                  value={stat.value}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ const HeroPhotoMosaic = ({
       className={`mb-2 ${className}`}
     >
       {images.map((image, index) => (
-        <div key={index} className="m-1 w-32 h-32 bg-[#8f7d5e] p-1 rounded-md">
+        <div key={index} className="m-1 w-32 h-32 bg-white p-1 rounded-md">
           <HeroImageCard
             src={image.src}
             alt={image.alt}
